@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Aptitude test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+body {
+  background-image: url('/images/pngtree-college-entrance-examination-banner-image_254369.jpg');
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100% 100%;
+}
+.homePageBox {
+    float: left;
+    margin-left: 140px;
+    margin-top: 30px;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+.homePageBox2 {
+  float: left;
+  margin-left: 360px;
+  margin-top: 250px;
+    width: 300px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+}
+.subHead2 {
+    font-size: 105%;
+    font-family: 'Proxima-Nova-Light';
+}
+</style>
+  </head>
+  <body >
+    <!-- navbar  home page -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-expand">
+<div class="container-fluid">
+  <a class="navbar-brand" href="index.html">
+     <img src="/images/aptitude_test_logo.jpg" alt="" width="45" height="35" class="d-inline-block align-text-top">
+     <b>Aptitude Test</b>
+  </a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <li class="nav-item">
+        <a class="btn btn-secondary" href="/login">Login</a>
+      </li>&nbsp;&nbsp;
+      <li class="nav-item">
+        <a class="btn btn-success" href="/register">Register</a>
+      </li>&nbsp;&nbsp;
+      <li class="nav-item">
+        <a class="btn btn-info" href="about.html">About</a>
+      </li>&nbsp;&nbsp;
+      <li class="nav-item">
+        <a class="btn btn-warning" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<div class="homePageBox">
+			<br><h2>PASS YOUR TEST</h2><p class="subHead1" style="margin-top:15px;color:#E9E9E9;">Prepare with us - Pass your test - Get the job</p>
+			<form action="/verifyCode" method="POST" th:object="${code}">
+        <input type="text" placeholder="Enter test code" name="code" value="">
+		<input type="submit" value="Start" class="btn btn-success">
+				</div>
+    <div class="homePageBox2">
+    			<br><h2 style="font-size:170%;">Recruiting?</h2><p class="subHead2" style="margin-top:10px;color:#E9E9E9;">We help you choose the right talent.</p>
+    			<a href="employers/" class="cancelLink"><div class="btn btn-info" style="margin-top:-5px;">Learn More</div></a>
+    		</div>
+  </body>
+</html>
